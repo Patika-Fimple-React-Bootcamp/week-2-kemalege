@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Todo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="resources/css/index.css">
+    <script src = 'https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js'></script>
+    <script src="resources\js\index.js" defer></script>
+    <script src="resources\js\getPosts.js" ></script>
+    <script src="resources\js\getComments.js" ></script>
+    <script src="resources\js\deletePost.js" defer></script>
+    <script src="resources\js\filterPost.js" defer></script>
+    <script src="resources\js\closeModal.js" defer></script>
+</head>
+
+<body>
+    <section id="modal" class="modal">
+        <div id="modal-content" class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Post Comments</h2>
+            </div>
+            <div class="modal-body" data-modal-body>
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn cancel-btn" id="cancel-btn">Cancel</button>
+            </div>
+        </div>
+    </section>
+    <main id="main">
+        <section id="header" class="header">
+            <div class="input-container">
+                <label for="filter-input">Search</label>
+                <input type="text" class="filter-input" placeholder="Search for posts..">
+            </div>
+        </section>
+        <section id="card-layout" class="card-layout">
+            
+        </section>
+    </main>
+</body>
+
+</html>
